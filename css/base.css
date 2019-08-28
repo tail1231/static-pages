@@ -1,0 +1,454 @@
+/* body样式 */
+body {
+    font:12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;
+    background-color: #f0f3ef;
+}
+/* 版心 */
+.w {
+    width: 1190px;
+    margin: auto;
+}
+/* 左浮动 */
+.fl {
+    float: left;
+}
+/* 右浮动 */
+.fr {
+    float: right;
+}
+/* 字体图标样式 */
+i , em , s {
+    font-family: "iconfont";
+    font-style: normal;
+}
+.clearfix:before,.clearfix:after { 
+    content:"";
+    display: table;  /* 这句话可以出发BFC BFC可以清除浮动,BFC我们后面讲 */
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    *zoom:1;
+}
+ul , h1 , h2 , h3 , h4 , h5 , input , button , p , ol {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* 顶部开始 */
+.J_event {
+    height: 80px;
+    background-color: #1145a4;
+}
+.J_event a {
+    display: block;
+    text-decoration: none;
+    background-image: url(../images/header.jpg);
+    height: 80px;
+    position: relative;
+}
+.J_event i {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #eee;
+    background: rgba(0,0,0,.4);
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* 顶部结束 */
+/* 快捷导航栏开始 */
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+.shortcut .w {
+    color: #999;
+}
+.shortcut ul {
+    list-style: none;
+}
+.shortcut .fl {
+    margin-left: 210px;
+}
+.shortcut .fl i {
+    font-size: 14px;
+    color: #f10215;
+}
+.shortcut .fr li {
+    float: left;
+}
+.shortcut a {
+    text-decoration: none;
+    color: #999;
+}
+.shortcut a:hover {
+    color: #e33333;
+}
+.shortcut li.spacer {
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 11px 12px 0;
+}
+.shortcut .keep {
+    color: #e33333;
+}
+/* 快捷导航栏结束 */
+/* 头部开始 */
+.header .w {
+    height: 140px;
+    position: relative;
+}
+.header h1 {
+    margin: 0;
+    position: relative;
+}
+.header .logo a {
+    position: absolute;
+    top: -31px;
+    display: block;
+    width: 190px;
+    height: 170px;
+    background-image: url(../images/sprite.head.png);
+    box-shadow: 0 -12px 10px rgba(0,0,0,.2);
+    text-indent: -999px;
+    overflow: hidden;
+    border-bottom: 1px solid #ededed;
+}
+.search {
+    width: 550px;
+    height: 35px;
+    position: absolute;
+    left: 320px;
+    top: 25px;
+}
+.search input {
+    width: 496px;
+    height: 35px;
+    background-color: #fff;
+    outline: none;
+    color: #999;
+    padding-left: 4px;
+    float: left;
+}
+.search button {
+    background-color: #f10215;
+    width: 50px;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    float: left;
+    line-height: 35px;
+    text-align: center;
+}
+.search button i {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+.hotwords {
+    position: absolute;
+    left: 320px;
+    top: 65px;
+}
+.hotwords ul {
+    list-style: none;
+}
+.hotwords a {
+    text-decoration: none;
+    color: #999;
+}
+.hotwords a:hover {
+    color: #c81623;
+}
+.hotwords li {
+    float: left;
+    margin-right: 10px;
+}
+.hotwords .first{
+    margin-right: 10px;
+    color: #f10215;
+}
+.mycar {
+    position: absolute;
+    right: 100px;
+    top: 25px;
+    width: 188px;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid #e3e4e5;
+    background-color: #fff;
+    text-align: center;
+}
+.mycar i {
+    font-size: 16px;
+    font-weight: 700;
+    color: #f10214;
+}
+.mycar a {
+    text-decoration: none;
+    color: #f10214;
+}
+.mycar s {
+    position: absolute;
+    top: 5px;
+    left: 140px;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 3px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f10215;
+    color: #fff;
+    border-radius: 7px;
+}
+.treasure {
+    position: absolute;
+    right: 0;
+    top: 90px;
+    width: 190px;
+    height: 40px;
+    background-image: url(../images/459c041758152c5a.gif);
+}
+.navitems {
+    position: absolute;
+    left: 224px;
+    top: 105px;
+}
+.navitems ul {
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+}
+.navitems li {
+    float: left;
+    margin: 0 12px;
+}
+.navitems a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.navitems a:hover {
+    color: #c81623;
+}
+.navitems .spacer {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    float: left;
+    margin: 15px 5px 0;
+}
+/* 头部结束 */
+/* 底部开始 */
+.footer {
+    height: 575px;
+}
+.footer_service {
+    padding: 30px 0;
+    border-bottom: 1px solid #dedede;
+}
+.footer_service_inner li {
+    list-style: none;
+    float: left;
+    width: 297px;
+    height: 42px;
+    line-height: 42px;
+}
+.service_unit {
+    width: 225px;
+    height: 4px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer_service_inner h5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 42px;
+    background-image:url(../images/ico.png);
+    text-indent: -999px;
+    overflow: hidden;
+}
+.footer_service_inner p {
+    /* float: left; */
+    font-size: 18px;
+    color: #444;
+    font-weight: 700;
+    margin-left: 45px;
+}
+.footer .duo {
+    background-position: 0 0;
+}
+.footer .kuai {
+    background-position: 0 -43px;
+}
+.footer .hao {
+    background-position: 0 -86px;
+}
+.footer .sheng {
+    background-position: 0 -129px;
+}
+.footer .help {
+    height: 160px;
+    padding: 20px 0;
+}
+.footer .help_inner {
+    height: 160px;
+}
+.help_list h5 {
+    font-size: 14px;
+    color: #666;
+}
+.help_nav {
+    float: left;
+    width: 198px;
+}
+.help_nav ul {
+    list-style: none;
+}
+.help_nav li {
+    height: 22px;
+}
+.help_nav li.biaoti {
+    height: 28px;
+}
+
+.help_nav a {
+    color: #666;
+    text-decoration: none;
+}
+.help_nav a:hover {
+    color: #c81623;
+}
+.cover {
+    width: 198px;
+    height: 151px;
+    float: left;
+    color: #666;
+    background: url(../images/sprite.footer.png) no-repeat;
+}
+.cover h5 {
+    text-align: center;
+    height: 28px;
+}
+.cover ul {
+    list-style: none;
+}
+.info {
+    width: 175px;
+    height: 45px;
+    margin: 7px 0 6px 10px; 
+}
+.cover .more {
+    text-align: right;
+}
+.cover .more a {
+    text-decoration: none;
+    color: #666;
+}
+.cover .more a:hover {
+    color: #c81623;
+}
+.copyright_inner {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+.copyright span.spacer {
+    color: #ccc;
+    margin: 0 10px;
+}
+.copyright_inner p {
+    height: 22px;
+}
+.copyright_inner a:hover {
+    color: #c81623;
+}
+.copyright_links p {
+    text-align: center;
+}
+.copyright_links a {
+    color: #666;
+    text-decoration: none;
+}
+.copyright_info {
+    margin-top: 12px;
+}
+.copyright_info p {
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+}
+.copyright_info a , span {
+    text-decoration: none;
+    color: #999;
+}
+.copyright_inter i {
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    background:url(../images/sprite.footer.png) no-repeat;
+    margin-right: 12px;
+}
+.copyright_inter .first {
+    width: 12px;
+    height: 12px;
+    background-position: -109px -155px;
+}
+.copyright_inter .second {
+    background-position: -168px -155px;
+}
+.copyright_inter .third {
+    background-position: -148px -155px;
+}
+.copyright_inter .fourth {
+    background-position: -128px -155px;
+}
+.copyright_inter .fifth {
+    background-position: -108px -172px;
+}
+.copyright_subsites {
+    text-align: center;
+}
+.copyright_subsites a {
+    text-decoration: none;
+    color: #999;
+}
+.copyright_auth {
+    padding: 35px 0;
+}
+.copyright_auth p {
+    text-align: center;
+}
+.copyright_auth a {
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background: url(../images/sprite.footer.png) no-repeat;
+}
+.copyright_auth .first {
+    background-position: -205px -111px;
+}
+.copyright_auth .second {
+    background-position: -205px -74px;
+}
+.copyright_auth .third {
+    background-position: -205px -37px;
+}
+.copyright_auth .fourth {
+    background-position: -205px 0;
+}
+.copyright_auth .fifth {
+    background-position: 0 -155px;
+}
+/* 底部结束 */
